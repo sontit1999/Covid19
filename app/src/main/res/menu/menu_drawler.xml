@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_insert_chart_black_24dp"
+        android:title="Tình hình covid" />
+    <item
+        android:id="@+id/nav_execute"
+        android:icon="@drawable/ic_hot_tub_black_24dp"
+        android:title="Chỉ đạo điều hành" />
+    <item
+        android:id="@+id/nav_news"
+        android:icon="@drawable/ic_find_in_page_black_24dp"
+        android:title="Tin tức dịch bệnh" />
+    <item
+        android:id="@+id/nav_question"
+        android:icon="@drawable/ic_phone_in_talk_black_24dp"
+        android:title="Giải đáp thắc mắc" />
+    <item
+        android:id="@+id/nav_protectHelth"
+        android:icon="@drawable/ic_security_black_24dp"
+        android:title="Bảo vệ bản thân" />
+    <item
+        android:id="@+id/nav_khuyencao"
+        android:icon="@drawable/ic_record_voice_over_black_24dp"
+        android:title="Khuyến cáo" />
+    <item
+        android:id="@+id/nav_call"
+        android:icon="@drawable/ic_ring_volume_black_24dp"
+        android:title="Gọi cho bộ y tế" />
+    <item
+        android:id="@+id/nav_repply"
+        android:icon="@drawable/ic_mail_black_24dp"
+        android:title="Phản hồi" />
+    <item
+        android:id="@+id/nav_aboutMe"
+        android:icon="@drawable/ic_info_outline_black_24dp"
+        android:title="Về chúng tôi" />
+</menu>

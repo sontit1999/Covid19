@@ -1,0 +1,82 @@
+<resources>
+    <string name="app_name">COVID19</string>
+    <string-array name="planets_array">
+        <item>Việt Nam</item>
+        <item>Hà nội</item>
+        <item>Hà Giang</item>
+        <item>Cao Bằng</item>
+        <item>Bắc Cạn</item>
+        <item>Tuyên Quang</item>
+        <item>Lào Cai</item>
+        <item>Điện Biên</item>
+        <item>Lai Châu</item>
+        <item>Sơn La</item>
+        <item>Yên Bái</item>
+        <item>Hòa Bình</item>
+        <item>Thái Nguyên</item>
+        <item>Lạng Sơn</item>
+        <item>Quảng Ninh</item>
+        <item>Bắc Giang</item>
+        <item>Phú Thọ</item>
+        <item>Vĩnh Phúc</item>
+        <item>Bắc Ninh</item>
+        <item>Hải Dương</item>
+        <item>Hải Phòng</item>
+        <item>Hưng Yên</item>
+        <item>Thái Bình</item>
+        <item>Hà Nam</item>
+        <item>Nam Định</item>
+        <item>Ninh Bình</item>
+        <item>Thanh Hóa</item>
+        <item>Nghệ An</item>
+        <item>Hà Tĩnh</item>
+        <item>Quảng Bình</item>
+        <item>Quảng Trị</item>
+        <item>Thừa Thiên Huế</item>
+        <item>Đà Nẵng</item>
+        <item>Quảng Nam</item>
+        <item>Quảng Ngãi</item>
+        <item>Bình Định</item>
+        <item>Phú Yên</item>
+        <item>Khánh Hòa</item>
+        <item>Ninh Thuận</item>
+        <item>Bình Thuận</item>
+        <item>Kontum</item>
+        <item>Gia Lai</item>
+        <item>Đắk Lắk</item>
+        <item>Đắk Nông</item>
+        <item>Lâm Đồng</item>
+        <item>Bình Phước</item>
+        <item>Tây Ninh</item>
+        <item>Bình Dương</item>
+        <item>Đồng Nai</item>
+        <item>Bà Rịa - Vũng tàu</item>
+        <item>Hồ Chí Minh</item>
+        <item>Long An </item>
+        <item>Bến Tre</item>
+        <item>Tiền Giang</item>
+        <item>Trà Vinh</item>
+        <item>Vĩnh Long</item>
+        <item>Đồng Tháp</item>
+        <item>An Giang</item>
+        <item>Kiên Giang</item>
+        <item>Hậu Giang</item>
+        <item>Sóc Trăng</item>
+        <item>Bạc Liêu</item>
+        <item>Cà Mau</item>
+    </string-array>
+    <string name="aboutme">Đây là ứng dụng cập nhật diễn biến dịch covid-19 nhanh chóng, chính xác giúp người dùng có thể theo dõi được tình hình dịch bệnh trong nước cũng như quốc tế. \n Chúc mọi người luôn có thật nhiều sức khỏe.Chúc Việt Nam đoàn kết , bình tĩnh, quyết tâm chiến thắng đại dịch Covid. \n Made by Sơn Tít dz :D</string>
+    <string name="corona">
+        Coronavirus 2019 (2019-nCoV) là một loại virus đường hô hấp mới gây bệnh viêm đường hô hấp cấp ở người và cho thấy có sự lây lan từ người sang người. Virus này được xác định trong một cuộc điều tra ổ dịch bắt nguồn từ khu chợ lớn chuyên bán hải sản và động vật ở Vũ Hán, tỉnh Hồ Bắc, Trung Quốc. 2019-nCoV là chủng virus mới chưa được xác định trước đó. Ngoài chủng coronavirus mới phát hiện này, đã có 6 chủng coronavirus khác được biết tới ngày nay có khả năng lây nhiễm ở người.
+    </string>
+    <string name="nguongoccorona">Các cơ quan y tế và đối tác y tế đang nỗ lực để xác định nguồn gốc của 2019-nCoV. Virus corona là một betacoronavirus, giống như MERS và SAR, tất cả đều có nguồn gốc từ vật chủ từ loài dơi. Virus corona là một họ virus lớn, phổ biến ở nhiều loài động vật khác nhau bao gồm lạc đà, mèo và dơi. Phân tích cây di truyền của virus này đang được tiếp tục để biết nguồn gốc cụ thể của virus. SARS, một loại coronavirus khác xuất hiện lây nhiễm cho người, bắt nguồn loài từ cầy hương, trong khi MERS, một loại coronavirus khác lây nhiễm cho người, bắt nguồn từ lạc đà</string>
+    <string name="cochelaylan">Virrus này ban đầu xuất hiện từ nguồn động vật nhưng có khả năng lây lan từ người sang người. Điều quan trọng cần lưu ý là sự lây lan từ người sang người có thể xảy ra liên tục. Ở người, virus lây từ người này sang người kia thông qua tiếp xúc với dịch cơ thể của người bệnh. Tùy thuộc vào mức độ lây lan của chủng virus, việc ho, hắt hơi hay bắt tay có thể khiến người xung quanh bị phơi nhiễm.
+Virus cũng có thể bị lây từ việc ai đó chạm tay vào một vật mà người bệnh chạm vào, sau đó đưa lên miệng, mũi, mắt họ. Những người chăm sóc bệnh nhân cũng có thể bị phơi nhiễm virus khi xử lý các chất thải của người bệnh.</string>
+    <string name="trieuchung">Theo báo cáo ở bệnh nhân mắc 2019-nCoV từ nhẹ đến nặng bao gồm các triệu chứng: sốt, ho và khó thở. Các triệu chứng này có thể xuất hiện từ 2 đến 14 ngày sau khi tiếp xúc nguồn bệnh. Tới khi khởi phát, nCOV có thể diễn biến đến viêm phổi nặng, suy hô hấp tiến triển và tử vong, đặc biệt ở những người có bệnh mạn tính, suy giảm miễn dịch.</string>
+    <string name="khuyencao">Để chủ động phòng chống bệnh viêm phổi cấp do chủng vi rút mới coronavirus tại thành phố Vũ Hán, Bộ Y tế khuyến cáo người dân và cộng đồng thực hiện tốt các biện pháp sau:\n
+- Hạn chế tiếp xúc trực tiếp với người bị bệnh viêm đường hô hấp cấp tính; khi cần thiết phải tiếp xúc với người bệnh phải đeo khẩu trang y tế đúng cách và giữ khoảng cách khi tiếp xúc.\n
+- Giữ ấm cơ thể, vệ sinh cá nhân, rửa tay thường xuyên bằng xà phòng, súc họng bằng nước sát khuẩn miệng để phòng bệnh viêm phổi.\n
+- Cần che miệng và mũi khi ho hoặc hắt hơi, tốt nhất bằng khăn vải hoặc khăn tay để làm giảm phát tán các dịch tiết đường hô hấp.\n
+- Hạn chế tiếp xúc gần với các trang trại nuôi động vật hoặc động vật hoang dã.\n
+- Những người trở về từ thành phố Vũ Hán, tỉnh Hồ Bắc, Trung Quốc hoặc có tiếp xúc gần với người mắc bệnh viêm phổi tại thành phố Vũ Hán trong vòng 14 ngày nếu có dấu hiệu sốt, ho, khó thở, cần đến ngay cơ sở y tế gần nhất để được tư vấn, khám, điều trị kịp thời.</string>
+</resources>

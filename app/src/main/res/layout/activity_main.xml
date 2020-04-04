@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+              <variable
+                  name="vietnam"
+                  type="com.example.covid19.model.Vietnam" />
+              <variable
+                  name="global"
+                  type="com.example.covid19.model.Global" />
+    </data>
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawlerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <RelativeLayout
+                android:id="@+id/toolbar"
+                android:background="#FFB74D"
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize">
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:text="Covid-19"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textSize_tittle"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <ImageView
+                    android:id="@+id/ivNotification"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="15dp"
+                    android:src="@drawable/ic_notifications_active_black_24dp"
+                    android:layout_width="?actionBarSize"
+                    android:layout_height="match_parent"/>
+                <ImageView
+                    android:id="@+id/ivDraw"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+
+                    android:padding="15dp"
+                    android:src="@drawable/ic_menu_black_24dp"
+                    android:layout_width="?actionBarSize"
+                    android:layout_height="match_parent"/>
+            </RelativeLayout>
+            <FrameLayout
+                android:id="@+id/content_frame"
+                android:layout_below="@id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </RelativeLayout>
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="wrap_content"
+            app:menu="@menu/menu_drawler"
+            android:background="#FFB74D"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:headerLayout="@layout/nav_header"
+            android:fitsSystemWindows="true" >
+        </com.google.android.material.navigation.NavigationView>
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+
+</layout>

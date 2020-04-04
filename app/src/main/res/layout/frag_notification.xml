@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <variable
+            name="viewmodel"
+            type="com.example.covid19.fragment.notifi.NotificationViewModel" />
+    </data>
+    <androidx.core.widget.NestedScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/llLuoivandong"
+                app:layout_constraintTop_toTopOf="parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@drawable/ic_work"
+                    android:padding="7dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"/>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tvNgoiLau"
+                        android:text="Lười vận động"
+                        android:textSize="@dimen/textSize_content"
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <com.michaelmuenzer.android.scrollablennumberpicker.ScrollableNumberPicker
+                    android:id="@+id/numberNgoilau"
+                    app:snp_scrollEnabled="true"
+                    app:snp_updateInterval="25"
+                    app:snp_maxValue="1000"
+                    app:snp_minValue="30"
+                    app:snp_stepSize="5"
+                    app:snp_value="10"
+                    android:background="@drawable/number_picker_bg_color"
+                    android:layout_width="wrap_content"
+                    app:snp_buttonBackgroundTintSelector="@color/white"
+                    app:snp_buttonTouchScaleFactor="0.8"
+                    app:snp_orientation="horizontal"
+                    app:snp_valueMarginEnd="5dp"
+                    app:snp_valueMarginStart="5dp"
+                    app:snp_value_text_color="@color/colorPrimary"
+                    app:snp_value_text_size="16sp"
+                    app:snp_value_text_appearance="?android:attr/textAppearanceMedium"
+                    app:snp_buttonPaddingBottom="8dp"
+                    app:snp_buttonPaddingLeft="8dp"
+                    app:snp_buttonPaddingRight="8dp"
+                    app:snp_buttonPaddingTop="8dp"
+                    android:layout_height="wrap_content"/>
+                <Switch
+                    android:id="@+id/switchNgoilau"
+                    android:padding="15dp"
+                    android:checked="false"
+                    android:theme="@style/SCBSwitch"
+                    android:backgroundTint="#FFB74D"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llThongbaocoivd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@id/llLuoivandong">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:padding="7dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_book" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvCovid"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Khuyến cáo bộ y tế"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textSize_content" />
+                </LinearLayout>
+                <com.michaelmuenzer.android.scrollablennumberpicker.ScrollableNumberPicker
+                    android:id="@+id/numberCovid"
+                    app:snp_scrollEnabled="true"
+                    app:snp_updateInterval="25"
+                    app:snp_maxValue="1000"
+                    app:snp_minValue="30"
+                    app:snp_stepSize="5"
+                    app:snp_value="10"
+                    android:background="@drawable/number_picker_bg_color"
+                    android:layout_width="wrap_content"
+                    app:snp_buttonBackgroundTintSelector="@color/white"
+                    app:snp_buttonTouchScaleFactor="0.8"
+                    app:snp_orientation="horizontal"
+                    app:snp_valueMarginEnd="5dp"
+                    app:snp_valueMarginStart="5dp"
+                    app:snp_value_text_color="@color/colorPrimary"
+                    app:snp_value_text_size="16sp"
+                    app:snp_value_text_appearance="?android:attr/textAppearanceMedium"
+                    app:snp_buttonPaddingBottom="8dp"
+                    app:snp_buttonPaddingLeft="8dp"
+                    app:snp_buttonPaddingRight="8dp"
+                    app:snp_buttonPaddingTop="8dp"
+                    android:layout_height="wrap_content"/>
+                <Switch
+                    android:id="@+id/switchCovid"
+                    android:layout_width="wrap_content"
+                    android:theme="@style/SCBSwitch"
+                    android:checked="false"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#FFB74D"
+                    android:padding="15dp" />
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</layout>
