@@ -168,6 +168,7 @@ public class MainActivity extends BaseActivity<ActivityMainBinding,MainViewModel
             @Override
             public void onClick(View view) {
                 addFragment(new NotificationFragment());
+                binding.tvTitle.setText("Thông báo");
             }
         });
     }
