@@ -34,6 +34,9 @@ public class Constant {
     public static String mailFeedback ="tvson999@gmail.com";
     public static boolean isFirst = true;
     public static boolean enableAlarm = false;
+    public static String keyngoilau = "ngoilau";
+    public static String keycovid = "covid";
+    public static String namePrefrence = "sontit";
 
     public static void showNotification(Context context, String title, String body, Intent intent) {
         Uri soundUri = Uri.parse(ContentResolver.SCHEME_ANDROID_RESOURCE + "://"+ context.getApplicationContext().getPackageName() + "/" + R.raw.message);
@@ -61,7 +64,8 @@ public class Constant {
                 .setContentTitle(title)
                 .setContentText(body)
                 .setOngoing(true)
-                .setDefaults(Notification.DEFAULT_VIBRATE | Notification.DEFAULT_LIGHTS | Notification.DEFAULT_SOUND).setLargeIcon(BitmapFactory.decodeResource(context.getResources(), R.drawable.corona))
+                .setPriority(NotificationCompat.PRIORITY_MAX)
+                .setLargeIcon(BitmapFactory.decodeResource(context.getResources(), R.drawable.corona))
                 .setStyle(new NotificationCompat.BigTextStyle().bigText(body))
                 .setAutoCancel(true);
 
@@ -91,6 +95,12 @@ public class Constant {
         arr.add(R.raw.dieu3);
         arr.add(R.raw.dieu4);
         arr.add(R.raw.dieu5);
+        arr.add(R.raw.tranhdilai);
+        arr.add(R.raw.tranhtiepxuc);
+        arr.add(R.raw.khiho);
+        arr.add(R.raw.chianchin);
+        arr.add(R.raw.khongkhacnho);
+        arr.add(R.raw.deokhautrang);
         return arr;
     }
     public static ArrayList<String> getListTextNotification(){
@@ -100,6 +110,12 @@ public class Constant {
         arrayList.add("Thường xuyên rửa tay bằng xà phòng hoặc dung dịch sát khuẩn.");
         arrayList.add("Thường xuyên vệ sinh nhà cửa, lau rửa thường xuyên, để thông thoáng, sinh hoạt lành mạnh.");
         arrayList.add("Thực hiện khai báo y tế, cập nhật tình hình sức khỏe hàng ngày, giữ liên hệ thường xuyên với cán bộ y tế, cơ sở y tế.");
+        arrayList.add("Tránh đi lại du lịch nếu đang có ho , sốt hoặc khó thở. Đến ngay cơ sở y tế khi có triệu chứng nghi ngờ.Đồng thời chia sẻ lịch trình di  chuyển với nhân viên y tế.");
+        arrayList.add("Tránh tiếp xúc với người bị ho sốt. Thường xuyên rửa tay bằng xà phòng. Tránh chạm tay vào mắt  mũi miệng nha");
+        arrayList.add("Khi ho, hắt hơi hãy che miệng và mũi bằng khăn giấy hoặc tay áo");
+        arrayList.add("CHỉ sử dụng các loại thực phẩm chín.Thực hiện việc ăn chín uống sôi");
+        arrayList.add("Không khạc nhổ bừa bãi nơi công cộng.Tránh tiếp xúc gần với các loại động vật nuôi hoặc hoang dã");
+        arrayList.add("Đeo khẩu trang tới nơi đông người và khi đi ra ngoài và khi tiếp xúc với người nghi bị bệnh.");
         return arrayList;
     }
 }

@@ -46,9 +46,9 @@
                     app:snp_scrollEnabled="true"
                     app:snp_updateInterval="25"
                     app:snp_maxValue="1000"
-                    app:snp_minValue="30"
-                    app:snp_stepSize="5"
-                    app:snp_value="10"
+                    app:snp_minValue="1"
+                    app:snp_stepSize="1"
+                    app:snp_value="1"
                     android:background="@drawable/number_picker_bg_color"
                     android:layout_width="wrap_content"
                     app:snp_buttonBackgroundTintSelector="@color/white"
@@ -109,9 +109,9 @@
                     app:snp_scrollEnabled="true"
                     app:snp_updateInterval="25"
                     app:snp_maxValue="1000"
-                    app:snp_minValue="30"
-                    app:snp_stepSize="5"
-                    app:snp_value="10"
+                    app:snp_minValue="1"
+                    app:snp_stepSize="1"
+                    app:snp_value="1"
                     android:background="@drawable/number_picker_bg_color"
                     android:layout_width="wrap_content"
                     app:snp_buttonBackgroundTintSelector="@color/white"
@@ -136,6 +136,15 @@
                     android:backgroundTint="#FFB74D"
                     android:padding="15dp" />
             </LinearLayout>
+            <Button
+                android:id="@+id/btnManagaNotification"
+                android:text="Cài đặt thông báo"
+                android:layout_margin="15dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/llThongbaocoivd"
+                android:background="@drawable/bg_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.core.widget.NestedScrollView>
 </layout>

@@ -18,6 +18,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.media.MediaPlayer;
 import android.net.Uri;
+import android.os.Handler;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
@@ -44,6 +45,12 @@ import com.example.covid19.model.Vietnam;
 import com.example.covid19.service.APIClient;
 import com.example.covid19.service.ApiCovid;
 import com.example.covid19.utils.Constant;
+import com.google.android.gms.ads.AdListener;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.InterstitialAd;
+import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.ads.initialization.InitializationStatus;
+import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
 import com.google.android.material.navigation.NavigationView;
 import com.google.android.material.snackbar.Snackbar;
 
@@ -57,9 +64,7 @@ import retrofit2.Retrofit;
 
 
 public class MainActivity extends BaseActivity<ActivityMainBinding,MainViewModel> {
-    SharedPreferences sharedPreferences ;
-    ArrayList<String> arrUrlImage;
-    CountryAdapter adapterCountry;
+
     AlarmManager alarmMgr;
     PendingIntent alarmIntent;
     boolean statusAlarm;
@@ -76,6 +81,13 @@ public class MainActivity extends BaseActivity<ActivityMainBinding,MainViewModel
 
     @Override
     public void setBindingViewmodel() {
+            // init ad main
+            MobileAds.initialize(this, new OnInitializationCompleteListener() {
+                @Override
+                public void onInitializationComplete(InitializationStatus initializationStatus) {
+
+                }
+            });
            // get sharefrence
             boolean firstUse = Constant.isFirst;
             Constant.isFirst = false;
@@ -97,6 +109,7 @@ public class MainActivity extends BaseActivity<ActivityMainBinding,MainViewModel
         transaction.commit();
     }
     private void event() {
+
         binding.navView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
@@ -154,32 +167,6 @@ public class MainActivity extends BaseActivity<ActivityMainBinding,MainViewModel
         binding.ivNotification.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                /*
-                if(statusAlarm){
-                    if(player!=null){
-                        player.stop();
-                    }
-
-                    player = MediaPlayer.create(MainActivity.this,R.raw.offnotification);
-
-                    cancelAlarm();
-                    statusAlarm = false;
-                    Constant.enableAlarm = false;
-                    player.start();
-                    Toast.makeText(MainActivity.this, "Đã tắt nhắc nhở chống dịch. Hãy click lại vào chuông  để nhận thông báo  về dịch covid :D", Toast.LENGTH_SHORT).show();
-                }else{
-                    if(player!=null){
-                        player.stop();
-                    }
-
-                    player = MediaPlayer.create(MainActivity.this,R.raw.enablenotification);
-                    statusAlarm = true;
-                    Constant.enableAlarm = true;
-                    createAlarm();
-                    player.start();
-                    Toast.makeText(MainActivity.this, "Đã bật nhắc nhở chống dịch covid. Ứng dụng sẽ nhắc nhở sau mỗi 1 giờ !!", Toast.LENGTH_SHORT).show();
-                }
-                */
                 addFragment(new NotificationFragment());
             }
         });
@@ -200,7 +187,7 @@ public class MainActivity extends BaseActivity<ActivityMainBinding,MainViewModel
     }
 
     private void callBoyte() {
-        String phone = "19009095";
+        String phone = "19003228";
         Intent intent = new Intent(Intent.ACTION_DIAL, Uri.fromParts("tel", phone, null));
         startActivity(intent);
     }

@@ -79,4 +79,8 @@ Virus cũng có thể bị lây từ việc ai đó chạm tay vào một vật 
 - Cần che miệng và mũi khi ho hoặc hắt hơi, tốt nhất bằng khăn vải hoặc khăn tay để làm giảm phát tán các dịch tiết đường hô hấp.\n
 - Hạn chế tiếp xúc gần với các trang trại nuôi động vật hoặc động vật hoang dã.\n
 - Những người trở về từ thành phố Vũ Hán, tỉnh Hồ Bắc, Trung Quốc hoặc có tiếp xúc gần với người mắc bệnh viêm phổi tại thành phố Vũ Hán trong vòng 14 ngày nếu có dấu hiệu sốt, ho, khó thở, cần đến ngay cơ sở y tế gần nhất để được tư vấn, khám, điều trị kịp thời.</string>
+    <string name="idADapp">ca-app-pub-3159028965186310~9953539467</string>
+    <string name="idADfullscreen">ca-app-pub-3159028965186310/2865386932</string>
+    <string name="idBannerTest">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="idBanner">ca-app-pub-3159028965186310/9231484739</string>
 </resources>
